@@ -1,0 +1,6 @@
+import os
+
+SECRET_KEY = os.environ['SECRET_KEY']
+ALGORITHM = os.environ['ALGORITHM']
+ACCESS_TOKEN_EXPIRE_MINUTES =  int(os.environ.get('ACCESS_TOKEN_EXPIRE_MINUTES', 15))
+DATABASE_URL = os.environ.get('SQLALCHEMY_DATABASE_URL')
